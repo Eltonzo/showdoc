@@ -5,7 +5,7 @@
     <el-container>
           <el-card class="center-card">
           <template>
-            <el-button type="text" class="goback-btn " ><span class="feedback" @click="feedback">反馈</span><router-link to="/item/index">返回</router-link></el-button>
+            <el-button type="text" class="goback-btn "  @click="feedback" ><span class="feedback">反馈</span></el-button><router-link to="/item/index">返回</router-link>
             <el-tabs  value="first" type="card">
               <el-tab-pane label="我的消息" name="first">
 
@@ -154,12 +154,10 @@ export default {
   },
 
   beforeCreate() {
-    /*给body添加类，设置背景色*/
-    document.getElementsByTagName("body")[0].className="grey-bg";
+
   },
   beforeDestroy(){
-    /*去掉添加的背景色*/
-    document.body.removeAttribute("class","grey-bg");
+
   }
   
 }

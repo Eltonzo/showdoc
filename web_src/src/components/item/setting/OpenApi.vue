@@ -21,6 +21,12 @@
       <p >
         <span v-html="$t('open_api_tips2')"></span>
       </p>
+      <p >
+        <span v-html="$t('open_api_tips3')"></span>
+      </p>
+      <p >
+        <span v-html="$t('open_api_tips4')"></span>
+      </p>
   </div>
 </template>
 
@@ -105,7 +111,7 @@ export default {
 
 .infoForm{
   width:470px;
-  margin-left: 20px;
+  margin-left: 90px;
   margin-top: 30px;
 }
 

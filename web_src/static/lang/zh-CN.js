@@ -1,5 +1,3 @@
-'use strict';
-
 exports.__esModule = true;
 exports.default = {
     //index
@@ -12,7 +10,7 @@ exports.default = {
     'section_title2' : 'API文档',
     'section_description2' : ' APP、web前端与服务器常用API来进行交互<br>用ShowDoc可以非常方便快速地编写出美观的API文档',
     'section_title3' : '数据字典',
-    'section_description3' : '好的数据字典可以很方便地向别人描述你的数据库结构<br>用ShowDoc可以编辑出美观的数字字典',
+    'section_description3' : '好的数据字典可以很方便地向别人描述你的数据库结构<br>用ShowDoc可以编辑出美观的数据字典',
     'section_title4' : '说明文档',
     'section_description4' : '你完全可以使用 ShowDoc来编写一些工具的说明书<br>也可以编写一些技术规范说明文档以供团队查阅',
     'section_title5' : '团队协作',
@@ -22,7 +20,7 @@ exports.default = {
     'section_title7' : '在线托管',
     'section_description7'  :'www.showdoc.cc 提供安全稳定的在线文档托管服务<br>你可以放心地选择托管你的文档数据在云端',
     'section_title8' : '立即体验',
-    'section_description8' : '超过6000+互联网团队正在使用ShowDoc',
+    'section_description8' : '超过10000+互联网团队正在使用ShowDoc',
 
     //user
     'login':'登录',
@@ -31,7 +29,6 @@ exports.default = {
     'register_new_account':'注册新账号',
     'forget_password':'忘记密码',
     'username_description':'用户名/邮箱',
-    'password':'密码',
     'password_again':'再次输入密码',
     'verification_code':'验证码',
     'register':'注册',
@@ -74,11 +71,13 @@ exports.default = {
     'item_domain' : '(可选)个性域名',
     'item_domain_illegal' : '个性域名只能是字母或数字的组合',
     'domain_already_exists' : '个性域名已经存在',
-    'visit_password_placeholder' : '访问密码（可选，私密项目请设置密码）',
+    'visit_password_placeholder' : '访问密码',
     'submit' : '提交',
     'goback' : '返回',
     'copy_exists_item' : '复制已存在项目',
     'please_choose' : '请选择',
+    'auto_db' : '我要自动生成数据字典',
+
 
     //item/pwd
     'input_visit_password' : '请输入访问密码',
@@ -120,8 +119,10 @@ exports.default = {
     "success_jump" :"操作成功！正在跳转...",
     "reset_token":"重新生成api_token",
     "open_api_tips1":"showdoc开放文档编辑的API，供使用者更加方便地操作文档数据。<br>利用开放API，你可以自动化地完成很多事",
-    "open_api_tips2":'关于API详细用法，请参考我们的<a target="_bank" href="https://www.showdoc.cc/page/102098">API文档</a>',
-    
+    "open_api_tips2":'如果你想自动化生成API文档，则可参考<a target="_bank" href="https://www.showdoc.cc/page/741656402509783">API文档</a>',
+    "open_api_tips3":'如果你想自动化生成数据字典，则可参考<a target="_bank" href="https://www.showdoc.cc/page/312209902620725">数据字典</a>',
+    "open_api_tips4":'如果你更自由地生成自己所需要的格式，则可参考<a target="_bank" href="https://www.showdoc.cc/page/102098">开放API</a>',
+
     //item/show
     'item':'项目',
     'share':'分享',
@@ -156,6 +157,7 @@ exports.default = {
 
     //page
     'title':'标题',
+    'catalog':'目录',
     'level_2_directory':'二级目录',
     'level_3_directory':'三级目录',
     's_number':'序号',
@@ -167,6 +169,7 @@ exports.default = {
     'insert_apidoc_template':'插入API接口模板',
     'insert_database_doc_template':'插入数据字典模板',
     'json_tools':'JSON工具',
+    'format_tools':'格式工具',
     'json_to_table':'JSON转参数表格',
     'beautify_json':'JSON格式化',
     'beautify_json_description':'请粘贴一段json，程序将自动以美观的方式格式化显示',
@@ -176,7 +179,6 @@ exports.default = {
     'cancel':'取消',
     'update_time':'修改时间',
     'update_by_who':'修改人',
-    'operation':'操作',
     'recover_to_this_version':'恢复到此版本',
     'close':'关闭',
     'finish':'完成',
@@ -198,6 +200,9 @@ exports.default = {
     'save_time':'保存时间' ,
     'insert_templ':'插入此模板',
     'delete_templ':'删除模板',
+    'save_success':'保存成功',
+    'paste_insert_table': '粘贴插入表格',
+    'paste_insert_table_tips':'你可以从网页或者excel中复制表格，然后粘贴在此处。粘贴并确定后，程序将自动把源表格转为markdown格式的表格。注：复制excel后，请鼠标右击，粘贴为纯文本。否则会当做图片上传。',
 
     //catalog
     'add_cat':'添加目录',
@@ -209,6 +214,105 @@ exports.default = {
 
     //其他
     "back_to_top":'回到顶部',
-    'draft_tips':"检测到有上次编辑时自动保存的草稿。是否自动填充上次的草稿内容？"
+    'draft_tips':"检测到有上次编辑时自动保存的草稿。是否自动填充上次的草稿内容？",
 
+    //管理后台
+    "management_backstage":"管理后台" ,
+    "user_management":"用户管理" ,
+    "item_management":"项目管理" ,
+    "add_user":"新增用户" ,
+    "search":"查询" ,
+
+    "team_mamage":'团队管理',
+    "background":'管理后台',
+    "distribution_to_team":'分配项目给团队',
+    "back_to_team":'返回团队管理',
+    "check_item":'查看项目',
+    "unassign":'取消分配',
+    "go_to_new_an_item":'去新建项目',
+    "confirm_unassign":'确认取消分配吗？此操作会取消项目和团队之间的关联',
+    "Join_time":'加入时间',
+    "add_team":'添加团队',
+    "member_authority":'成员权限',
+    "go_to_new_an_team":'去新建团队',
+    "adjust_member_authority":'调整每一个成员的项目权限',
+    "team_member_empty_tips":'该团队尚未有任何成员',
+    "team_member_authority_tips":'权限说明：编辑权限指的是成员可以新建/编辑项目页面，删除时将只能删除自己新建/编辑的页面。 只读权限指的是，该成员对本项目所有页面都只能查看，无法新增/编辑/删除',
+    "member":"成员",
+    "team_item":"项目",
+    "add_member":"添加成员",
+    "member_username":"成员用户名",
+    "team_name":"团队名",
+    "memberCount":"成员数",
+    "itemCount":"分配项目数",
+    "empty_team_tips":"欢迎使用团队管理功能。此功能非常适合Team leader对多人员、跨团队项目的协作管理。请先点击左上方按钮添加团队。添加团队后，可以随时增加/删除团队成员、批量分配到不同项目，并且可以设置不同项目里的成员权限。相比简单成员管理模式，团队管理功能可以批量地进行人员的增删，更方便复杂团队的协作。",
+
+    "copy_link":"复制链接",
+    "copy_success":"复制成功",
+    
+    "user_manage":"用户管理",
+    "item_manage":"项目管理",
+    "web_setting":"站点设置",
+    "register_open_label":"开放用户注册",
+    "ldap_open_label":"启用ldap登录",
+
+    "name":"姓名",
+    "name_tips":"推荐使用真实姓名",
+
+    "attachment":"附件",
+    "upload":"上传",
+    "upload_file":"上传文件",
+    "file_name":"文件名",
+    "download":"下载",
+    "file_size_tips":"文件大小在4M内",
+    
+    "confirm_cat_delete" :"确认删除目录吗？此操作会把该目录下的所有页面一并删除，请谨慎操作。",
+
+    "userrole":"用户角色",
+    "reg_time":"注册时间",
+    "last_login_time":"最后登录时间",
+    "administrator":"管理员",
+    "ordinary_users":"普通用户",
+    "owner":"所有者",
+    "privacy":"私密性",
+    "link":"链接",
+    "private":"密码访问",
+    "public":"公开访问",
+    "register_open":"开放用户注册",
+    "long_page_tips":"检测到本页面内容比较多，showdoc暂时关闭了html实时预览功能，以防止过多内容造成页面卡顿。你可以在编辑栏中找到预览按钮进行手动打开。",
+
+
+    "item_exit":"退出项目",
+    "confirm_exit_item":"你确定要退出该项目吗?",   
+
+     "insert":"插入",
+
+    "Open_item":"公开项目",
+    "private_item":"私密项目",
+    "private_item_passwrod":"私密项目请设置访问密码",
+
+    "create_sigle_page":"我要创建单页面地址",
+    "create_sigle_page_tips":"当仅仅想分享某个页面、而不想分享整个项目的时候，你可以选择分享单页面地址。分享出去后，你的好友将仅仅只看到单个页面，无法浏览目录菜单，也无法切换到其他页面查看。",
+
+    "home_page":"网站首页",
+    "full_page":"全屏介绍页面",
+    "login_page":"跳转到登录页面",
+    "jump_to_an_item":"跳转到某个项目",
+    "jump_to_item":"跳转到项目",
+
+    "recycle":"回收站",
+    "recycle_tips":"被删除的页面会进入回收站。在回收站超过3天的内容将被系统自动选择合适时候清理掉",
+    "page_title":"页面标题",
+    "deleter":"删除账号",
+    "del_time":"删除时间",
+    "recover":"恢复",
+    "recover_tips":"确认恢复吗？恢复的页面将出现在项目根目录",
+    
+    "cat_tips":"可拖动以排序",
+    "cat_limite_tips":"showdoc只支持最多三层目录，请优化目录结构",
+
+
+    "sort_pages":"页面排序",
+    "sort_pages_tips":"选择特定的目录后，你可以对该目录下的页面进行拖动排序",
+    
 };
